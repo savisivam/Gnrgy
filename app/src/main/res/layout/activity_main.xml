@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    >
+    <!-- display two Button's and a FrameLayout to replace the Fragment's  -->
+    <Button
+        android:id="@+id/firstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Fragment"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+</LinearLayout>
