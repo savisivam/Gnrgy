@@ -26,17 +26,17 @@ public class FirstFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_one, container, false);
         edtText=view.findViewById(R.id.edtText);
-        setupData();
         recyclerView=view.findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-        return view;
-    }
-    public void setupData(){
+
         editText=edtText.getText().toString();
         recycleAdapter = new RecycleAdapter(getActivity(),strings,editText);
         recyclerView.setAdapter(recycleAdapter);
 
+        return view;
     }
+
+
 
 }
 
